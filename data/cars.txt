@@ -1,0 +1,13 @@
+# Data from 'Naive Bayes Classifier example' by Eric Meisner November 22, 2003 
+# http://www.inf.u-szeged.hu/~ormandi/teaching/mi2/02-naiveBayes-example.pdf 
+#$ Color Type Origin Stolen
+Red Sports Domestic Yes
+Red Sports Domestic No
+Red Sports Domestic Yes
+Yellow Sports Domestic No
+Yellow Sports Imported Yes
+Yellow SUV Imported No
+Yellow SUV Imported Yes
+Yellow SUV Domestic No
+Red SUV Imported No
+Red Sports Imported Yes
