@@ -66,6 +66,8 @@ def main():
      Test = test()
      Test.carstest()
     """
+    Test = test()
+    Test.iristest()
 class test():
     def carstest(self):
         nb = nbayes()
@@ -81,6 +83,24 @@ class test():
         nb.readInData('data\gender.txt')
         attributes = {"Height":6,"Weight":130,"Footsize":8}
         print "Should be Female,",': '.join([results,nb.classify(attributes)])
+    def iristest(self):
+        nb = nbayes()
+        results = "Species"  
+        nb.result_column = results		
+        nb.readInData('data\iris.txt')
+	
+        # Three random (convenience sample) points from the data set
+        attributes = {"Sepallength":6.7,"Sepalwidth":3.3,"Petallength":5.7,"Petalwidth":2.5}
+        print "Should be I.virginica",': '.join([results,nb.classify(attributes)])
+
+        attributes = {"Sepallength":6.1,"Sepalwidth":2.8,"Petallength":4.0,"Petalwidth":1.3}
+        print "Should be I.versicolor",': '.join([results,nb.classify(attributes)])
+
+        attributes = {"Sepallength":4.9,"Sepalwidth":3.1,"Petallength":1.5,"Petalwidth":0.2}
+        print "Should be l.setosa",': '.join([results,nb.classify(attributes)])
+
+
+
     
     
 if __name__=='__main__':
