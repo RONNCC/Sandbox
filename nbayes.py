@@ -67,7 +67,9 @@ def main():
      Test.carstest()
     """
     Test = test()
-    Test.iristest()
+    #Test.iristest()
+    #Test.carstest()
+    #Test.gendertest()
 class test():
     def carstest(self):
         nb = nbayes()
