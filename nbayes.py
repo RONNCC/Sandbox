@@ -85,15 +85,3 @@ class test():
     
 if __name__=='__main__':
     main()
-#transpose the axis such that the result axis is always last
-#columns = asarray(columns)
-#assert a.shape[1] == len(columns), "The number of column headers does not equal the amount of complete data columns"
-
-#print a[a["Type"] == "Sports"]
-#print len(a[a["Type"] == "Sports"])
-#print a.dtype
-##    print 'COL',columns
-##    print 'A',a
-##    print ''
-#a = roll(a,len(columns) - where(columns==result_column)[0] -1 , 1)
-
