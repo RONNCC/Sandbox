@@ -1,0 +1,5 @@
+xkcd page 1120_3 -> 42_10
+
+matrix they have -> [ cos 90 sin 90  ] -> [  0 1 ] == more traditional [ cos 270 -sin 270 ] and that's why it works :D
+					[ -sin 90 cos 90 ] -> [ -1 0 ] 					   [ sin 270 cos 90   ]
+					
