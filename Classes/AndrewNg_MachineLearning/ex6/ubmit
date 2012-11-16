@@ -1,0 +1,23 @@
+ Volume in drive C has no label.
+ Volume Serial Number is A010-D1B5
+
+ Directory of C:\Users\Shomiron\Documents\GitHub\Sandbox\Classes\AndrewNg_MachineLearning\ex6
+
+[.]                         plotData.m
+[..]                        porterStemmer.m
+dataset3Params.m            processEmail.m
+emailFeatures.m             readFile.m
+emailSample1.txt            spamSample1.txt
+emailSample2.txt            spamSample2.txt
+ex6.m                       spamTest.mat
+ex6.pdf                     spamTrain.mat
+ex6data1.mat                submit.m
+ex6data2.mat                submitWeb.m
+ex6data3.mat                svmPredict.m
+ex6_spam.m                  svmTrain.m
+gaussianKernel.m            visualizeBoundary.m
+getVocabList.m              visualizeBoundaryLinear.m
+linearKernel.m              vocab.txt
+ml_login_data.mat           
+              29 File(s)        971,531 bytes
+               2 Dir(s)  18,812,329,984 bytes free
