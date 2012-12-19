@@ -43,14 +43,14 @@ CLASSIFIERS={
 #"SVM:sigmoid:8":svm.SVC(kernel='sigmoid',degree=8),
 #"SVM:sigmoid:9":svm.SVC(kernel='sigmoid',degree=9),
 #"SVM:sigmoid:10":svm.SVC(kernel='sigmoid',degree=10),
-#"SVM:poly:1":svm.SVC(kernel='poly',degree=1),
+"SVM:poly:1":svm.SVC(kernel='poly',degree=1),
 #"SVM:poly:2":svm.SVC(kernel='poly',degree=2),
 #"SVM:poly:3":svm.SVC(kernel='poly',degree=3),
-#"SVM:poly:4":svm.SVC(kernel='poly',degree=4),
+"SVM:poly:4":svm.SVC(kernel='poly',degree=4),
 #"SVM:poly:5":svm.SVC(kernel='poly',degree=5),
 #"SVM:poly:6":svm.SVC(kernel='poly',degree=6),
 #"SVM:poly:7":svm.SVC(kernel='poly',degree=7),
-#"SVM:poly:8":svm.SVC(kernel='poly',degree=8),
+"SVM:poly:8":svm.SVC(kernel='poly',degree=8),
 #"SVM:poly:9":svm.SVC(kernel='poly',degree=9),
 "SVM:poly:10":svm.SVC(kernel='poly',degree=10),
 
@@ -76,10 +76,10 @@ def attempted_parallel():
 	P.map(runTest,CLASSIFIERS.keys(),1)
 
 def serial():
-	for k,e in CLASSIFIERS.items():
-		print 'working on',k
-		e.fit(X,Y)
-	     	p  =e.predict([xn])
-	     	print k,'difference: ','\t',abs(actual-p),'\t','percent diff: ',(abs((p-actual))/(1.0*actual)*100.)
+        for k,e in CLASSIFIERS.items():
+                print 'working on',k
+                e.fit(X,Y)
+                p=e.predict([xn])
+                print k,'difference: ','\t',abs(actual-p),'\t','percent diff: ',(abs((p-actual))/(1.0*actual)*100.)
 
 serial()
